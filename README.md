@@ -9,9 +9,10 @@
 #
 send an email notification with folloing details: 
 --recipient 'brijeshdhaker@gmail.com'
---subject 'AI Notification Test #2025-01-01{id}'
+--subject 'AI Notification Test - 2026-04-17#{id}'
 --body 'Hello {name},\n\n This is automated AI message send using AI Tools #Message-{id}'
 --params {"id":"2001", "name":"Brijesh"}
+
 #
 # SQL Server MCP Server
 #
