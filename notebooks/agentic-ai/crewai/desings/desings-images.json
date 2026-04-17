@@ -1,213 +1,164 @@
 {
   "research_images": [
     {
-      "topic": "Scalability in Microservices",
-      "findings": "The Tavily Search API can be used to improve scalability and flexibility by providing real-time search results.",
-      "relevance": "High",
+      "topic": "Microservice Design",
+      "findings": "Design principles of microservices, such as scalability, fault tolerance, and maintainability.",
+      "relevance": "Highly relevant to modern software development practices,",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
-        }
-      ]
-    },
-    {
-      "topic": "Fault Tolerance in Microservices",
-      "findings": "Microservices can be designed to be fault-tolerant and resilient by using circuit breaking and service discovery mechanisms.",
-      "relevance": "High",
-      "sources": [
+          "sourceTitle": "The Microservices Edge",
+          "groupName": "Edgerunners"
+        },
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
-        }
-      ]
-    },
-    {
-      "topic": "Monitoring Microservices",
-      "findings": "The Tavily Search API can be used to track performance and identify bottlenecks using Prometheus and Grafana.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
-        }
-      ]
-    },
-    {
-      "topic": "Service Discovery Mechanisms",
-      "findings": "The Tavily Search API uses service discovery mechanisms such as load balancing and circuit breaking algorithms to improve horizontal and vertical scaling.",
-      "relevance": "High",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Integration with Other Services",
-      "findings": "The Tavily Search API can be used to integrate microservices with other services by using Service Mesh technologies such as Istio and Linkerd.",
-      "relevance": "High",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "source Title": "Software Engineering Institute (SEI)",
+          " groupName": "Practices"
         }
       ]
     },
     {
       "topic": "Microservice Design Patterns",
-      "findings": "Event-driven architectures and modular designs are common microservice design patterns that help improve scalability and maintainability.",
-      "relevance": "Medium",
+      "findings": "Understanding key patterns such as service composition, event sourcing, and RESTful APIs for better microservices architecture.",
+      "relevance": "Important for building scalable and maintainable microservices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "DevOps Pathways",
+          "groupName": "Design Patterns"
+        },
+        {
+          "sourceTitle": "DZone",
+          "groupName": "Resources"
         }
       ]
     },
     {
-      "topic": "Microservice Security",
-      "findings": "While the Tavily Search API is secure by default, encryption and authentication mechanisms must be used to ensure strong security.",
-      "relevance": "Medium",
+      "topic": "Microservice Design Tools",
+      "findings": "Exploring the use of tools like Spring Boot, Docker, and Kubernetes for microservices development.",
+      "relevance": "Useful for developers looking to transition to a microservices-based architecture.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "DZone",
+          "groupName": "Resources"
+        },
+        {
+          "sourceTitle": "Microservices Patterns Forum",
+          "groupName": "Discussion Forums"
         }
       ]
     },
     {
-      "topic": "Microservice Architecture",
-      "findings": "A layered architecture is recommended for microservices design to improve scalability and fault tolerance.",
-      "relevance": "Medium",
+      "topic": "Containerization in Microservice Design",
+      "findings": "Using containerization techniques like Docker for efficient deployment and management of microservices.",
+      "relevance": "Highly relevant to modern microservice development practices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Docker",
+          "groupName": "Contribution"
         }
       ]
     },
     {
-      "topic": "Microservice Performance",
-      "findings": "Prometheus and Grafana can be used to track performance and identify bottlenecks using data collection and visualization tools.",
-      "relevance": "Medium",
+      "topic": "Service Meshes in Microservice Design",
+      "findings": "Exploring the use of service meshes like Istio and Linkerd for network policies, traffic management, and monitoring.",
+      "relevance": "Important for building secure and efficient microservices architectures.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Istio Blog",
+          "groupName": "Documentation"
         }
       ]
     },
     {
-      "topic": "Microservice Scalability",
-      "findings": "Containerization and orchestration tools such as Kubernetes can be used to improve scalability on AWS.",
-      "relevance": "High",
+      "topic": "Microservice Design Frameworks",
+      "findings": "Using frameworks like API Design Patterns, Service Design Patterns, and Microservices Guide for better microservice development.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Design Patterns",
+          "groupName": "Practices"
+        },
+        {
+          "sourceTitle": "GitHub",
+          "groupName": "Repos"
         }
       ]
     },
     {
-      "topic": "Microservice Interoperability",
-      "findings": "Service Mesh technologies such as Istio and Linkerd can be used to improve interoperability between services.",
-      "relevance": "High",
+      "topic": "Microservice Testing in Agile",
+      "findings": "Prioritizing testing and CI/CD pipelines for microservices development.",
+      "relevance": "Highly relevant to modern software development practices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Kubernetes",
+          "groupName": "Contribution"
         }
       ]
     },
     {
-      "topic": "Microservice Integration with Cloud Computing Services",
-      "findings": "AWS provides various services such as EBS, VPC, and Route 53 that can be used to support microservice integration.",
-      "relevance": "High",
+      "topic": "Monitoring Services in Microservice Design",
+      "findings": "Using monitoring techniques like Prometheus and Grafana for real-time insights into microservices performance.",
+      "relevance": "Important for building efficient and scalable microservices architectures.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Prometheus",
+          "groupName": "Documentation"
         }
       ]
     },
     {
-      "topic": "Microservice Fault Tolerance",
-      "findings": "Circuit breaking and service discovery mechanisms can be used to improve fault tolerance in microservices.",
-      "relevance": "High",
+      "topic": "Microservice Governance in Organizations",
+      "findings": "Establishing policies and procedures for microservices development within organizations.",
+      "relevance": "Highly relevant to modern software development practices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "CodeCommit",
+          "groupName": "Resources"
         }
       ]
     },
     {
-      "topic": "Microservice Monitoring Best Practices",
-      "findings": " Prometheus and Grafana can be used to track performance and identify bottlenecks with data collection and visualization tools.",
-      "relevance": "Medium",
+      "topic": "Microservice Design Principles",
+      "findings": "Understanding key principles like separation of concerns, scalability, and fault tolerance for better microservices architecture.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Google Cloud Engineering",
+          "groupName": "Blog"
         }
       ]
     },
     {
-      "topic": "Microservice Security Patterns",
-      "findings": "Encryption and authentication mechanisms such as SSL/TLS should be used to ensure strong security in microservices.",
-      "relevance": "Medium",
+      "topic": "Implementing Microservice Security",
+      "findings": "Using security techniques like OAuth, SSL/TLS, and API keys for secure microservices development.",
+      "relevance": "Highly relevant to modern software development practices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "Cloud Natural Language Understanding",
+          "groupName": "Documentation"
         }
       ]
     },
     {
-      "topic": "Microservice Security Best Practices",
-      "findings": "Secure communication between services should be used with microservices, including using HTTPS.",
-      "relevance": "Medium",
+      "topic": "Microservice Architecture Models",
+      "findings": "Understanding different architecture models like port-based, message-based, and event-driven architectures for better microservices design.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": ""
+          "sourceTitle": "GitHub",
+          "groupName": "Repos"
+        }
+      ]
+    },
+    {
+      "topic": "Benefits of Microservices Architecture",
+      "findings": "Highlighting the benefits of microservices architecture like increased scalability, flexibility, and maintainability.",
+      "relevance": "Highly relevant to modern software development practices.",
+      "sources": [
+        {
+          "sourceTitle": "Kubernetes",
+          "groupName": "Documentation"
         }
       ]
     }
   ],
-  "summary": ""
+  "summary": "Summary of the research output for Microservice Design."
 }

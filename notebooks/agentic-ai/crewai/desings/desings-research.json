@@ -2,160 +2,159 @@
   "research_points": [
     {
       "topic": "Microservice Design",
-      "findings": "There are several key takeaways from the research on microservice design, including its potential to improve scalability and flexibility.",
-      "relevance": "The findings highlight the importance of considering the entire service ecosystem when designing microservices.",
+      "findings": "Design principles of microservices, such as scalability, fault tolerance, and maintainability.",
+      "relevance": "Highly relevant to modern software development practices,",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Design Best Practices",
-      "findings": "Several best practices for microservice design include using microservices for smaller, independent workloads.",
-      "relevance": "The findings emphasize the importance of tailoring designs to specific use cases and industry requirements.",
-      "sources": [
+          "sourceTitle": "The Microservices Edge",
+          "groupName": "Edgerunners"
+        },
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Design Architecture",
-      "findings": "The research highlights the importance of adopting a layered architecture for microservices to improve scalability and fault tolerance.",
-      "relevance": "The findings discuss the potential benefits of using service discovery mechanisms and monitoring systems to track performance.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Scalability in Microservices",
-      "findings": "The research emphasizes the importance of designing microservices to scale horizontally and vertically.",
-      "relevance": "The findings discuss the potential benefits of using containerization and orchestration tools to improve scalability.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Design Challenges",
-      "findings": "The research highlights several challenges associated with microservice design, including ensuring interoperability and fault tolerance.",
-      "relevance": "The findings discuss the potential benefits of using microservices to improve communication between services.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Service Discovery Mechanisms",
-      "findings": "The research highlights the importance of using service discovery mechanisms to improve horizontal and vertical scaling.",
-      "relevance": "The findings emphasize the potential benefits of using load balancing and circuit breaking algorithms to improve performance.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Monitoring Microservices",
-      "findings": "The research emphasizes the importance of using monitoring systems to track performance and identify bottlenecks.",
-      "relevance": "The findings discuss the potential benefits of using Prometheus and Grafana for data collection and visualization.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Fault Tolerance in Microservices",
-      "findings": "The research highlights the importance of designing microservices to be fault-tolerant and resilient.",
-      "relevance": "The findings emphasize the potential benefits of using circuit breaking and service discovery mechanisms to improve reliability.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Design and Cloud Computing",
-      "findings": "The research highlights the importance of considering cloud computing when designing microservices.",
-      "relevance": "The findings discuss the potential benefits of using containerization and orchestration tools to improve scalability on AWS.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Integration with Other Services",
-      "findings": "The research emphasizes the importance of designing microservices to be compatible with other services.",
-      "relevance": "The findings discuss the potential benefits of using Service Mesh technologies to improve integration and observability.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
-        }
-      ]
-    },
-    {
-      "topic": "Microservices Security",
-      "findings": "The research highlights the importance of considering securitywhen designing microservices.",
-      "relevance": "The findings emphasize the potential benefits of using encryption and authentication mechanisms to improve security.",
-      "sources": [
-        {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
+          "sourceTitle": "Software Engineering Institute (SEI)",
+          "groupName": "Practices"
         }
       ]
     },
     {
       "topic": "Microservice Design Patterns",
-      "findings": "The research highlights several microservice design patterns, including event-driven architectures and modular designs.",
-      "relevance": "The findings discuss the potential benefits of using these patterns to improve scalability and maintainability.",
+      "findings": "Understanding key patterns such as service composition, event sourcing, and RESTful APIs for better microservices architecture.",
+      "relevance": "Important for building scalable and maintainable microservices.",
       "sources": [
         {
-          "additionalProperties": "",
-          "type": "object",
-          "properties": "{}",
-          "required": "[]"
+          "sourceTitle": "DevOps Pathways",
+          "groupName": "Design Patterns"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Design Tools",
+      "findings": "Exploring the use of tools like Spring Boot, Docker, and Kubernetes for microservices development.",
+      "relevance": "Useful for developers looking to transition to a microservices-based architecture.",
+      "sources": [
+        {
+          "sourceTitle": "DZone",
+          "groupName": "Resources"
+        },
+        {
+          "sourceTitle": "Microservices Patterns Forum",
+          "groupName": "Discussion Forums"
+        }
+      ]
+    },
+    {
+      "topic": "Containerization in Microservice Design",
+      "findings": "Using containerization techniques like Docker for efficient deployment and management of microservices.",
+      "relevance": "Highly relevant to modern microservice development practices.",
+      "sources": [
+        {
+          "sourceTitle": "Docker",
+          "groupName": "Contribution"
+        }
+      ]
+    },
+    {
+      "topic": "Service Meshes in Microservice Design",
+      "findings": "Exploring the use of service meshes like Istio and Linkerd for network policies, traffic management, and monitoring.",
+      "relevance": "Important for building secure and efficient microservices architectures.",
+      "sources": [
+        {
+          "sourceTitle": "Istio Blog",
+          "groupName": "Documentation"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Design Frameworks",
+      "findings": "Using frameworks like API Design Patterns, Service Design Patterns, and Microservices Guide for better microservice development.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
+      "sources": [
+        {
+          "sourceTitle": "Design Patterns",
+          "groupName": "Practices"
+        },
+        {
+          "sourceTitle": "GitHub",
+          "groupName": "Repos"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Testing in Agile",
+      "findings": "Prioritizing testing and CI/CD pipelines for microservices development.",
+      "relevance": "Highly relevant to modern software development practices.",
+      "sources": [
+        {
+          "sourceTitle": "Kubernetes",
+          "groupName": "Contribution"
+        }
+      ]
+    },
+    {
+      "topic": "Monitoring Services in Microservice Design",
+      "findings": "Using monitoring techniques like Prometheus and Grafana for real-time insights into microservices performance.",
+      "relevance": "Important for building efficient and scalable microservices architectures.",
+      "sources": [
+        {
+          "sourceTitle": "Prometheus",
+          "groupName": "Documentation"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Governance in Organizations",
+      "findings": "Establishing policies and procedures for microservices development within organizations.",
+      "relevance": "Highly relevant to modern software development practices.",
+      "sources": [
+        {
+          "sourceTitle": "CodeCommit",
+          "groupName": "Resources"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Design Principles",
+      "findings": "Understanding key principles like separation of concerns, scalability, and fault tolerance for better microservices architecture.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
+      "sources": [
+        {
+          "sourceTitle": "Google Cloud Engineering",
+          "groupName": "Blog"
+        }
+      ]
+    },
+    {
+      "topic": "Implementing Microservice Security",
+      "findings": "Using security techniques like OAuth, SSL/TLS, and API keys for secure microservices development.",
+      "relevance": "Highly relevant to modern software development practices.",
+      "sources": [
+        {
+          "sourceTitle": "Cloud Natural Language Understanding",
+          "groupName": "Documentation"
+        }
+      ]
+    },
+    {
+      "topic": "Microservice Architecture Models",
+      "findings": "Understanding different architecture models like port-based, message-based, and event-driven architectures for better microservices design.",
+      "relevance": "Useful for developers looking to build scalable and maintainable microservices.",
+      "sources": [
+        {
+          "sourceTitle": "GitHub",
+          "groupName": "Repos"
+        }
+      ]
+    },
+    {
+      "topic": "Benefits of Microservices Architecture",
+      "findings": "Highlighting the benefits of microservices architecture like increased scalability, flexibility, and maintainability.",
+      "relevance": "Highly relevant to modern software development practices.",
+      "sources": [
+        {
+          "sourceTitle": "Kubernetes",
+          "groupName": "Documentation"
         }
       ]
     }
   ],
-  "summary": "Microservice design research report covering key topics and challenges in designing scalable, fault-tolerant microservices."
+  "summary": "Summary of the research output."
 }

@@ -126,7 +126,7 @@ if __name__ == "__main__":
     ### Convert the text to embeddings
     
     embedding_manager=EmbeddingManager()
-    embeddings = embedding_manager.embed_documents(texts)
+    embeddings = embedding_manager.embed_documents(douments)
 
     vectorstore = VectorStoreManager()
 
