@@ -52,3 +52,7 @@ embedchain
 openai-agents
 docx2txt
 tavily-python
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pydantic[email]

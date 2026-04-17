@@ -1,175 +1,26 @@
 {
   "research_points": [
     {
-      "topic": "Introduction to Microservices",
-      "findings": "Microservices design is a software architecture paradigm that distributes complexity among multiple services, each with its own business logic and API.",
-      "relevance": "The increasing adoption of microservices in modern software development has led to a better understanding of their benefits and challenges.",
+      "topic": "Microservice Design",
+      "findings": "Microservices are modular, distributed systems that consist of multiple smaller services, each with its own logic and database.",
+      "relevance": "The main advantage of microservices is increased scalability and fault tolerance as individual service failures can be contained within the service itself rather than affecting the entire system.",
       "sources": [
         {
-          "title": "Definition and History",
-          "url": "",
-          "additionalProperties": ""
+          "additionalProperties": "{}",
+          "type": "string",
+          "properties": "{",
+          "name": "search_query)",
+          "description": "Not specified in the format",
+          "required": ":[{",
+          "title": "Search Query"
         },
         {
-          "title": "Benefits of Microservices",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Components of a Microservice",
-      "findings": "A microservice is composed of multiple services that work together to achieve a common goal.",
-      "relevance": "Understanding the components of a microservice is crucial for designing and deploying effective microservices-based systems.",
-      "sources": [
-        {
-          "title": "Service Discovery",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "API Design",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Composition",
-      "findings": "The composition of microservices determines their scalability, fault tolerance, and maintainability.",
-      "relevance": "As microservices become more widespread in modern software development, understanding composition is essential for design and deployment decisions.",
-      "sources": [
-        {
-          "title": "Service Interoperability",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Caching and Load Balancing",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Deployment",
-      "findings": "Deployment strategies can influence the performance, scalability, and maintainability of microservices-based systems.",
-      "relevance": "Choose the right deployment strategy for your microservices architecture to achieve desired outcomes.",
-      "sources": [
-        {
-          "title": "Containerization and Orchestration",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Cloud-Native Computing",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Monitoring and Troubleshooting",
-      "findings": "Monitoring and troubleshooting microservices are critical for detecting issues early and ensuring system reliability.",
-      "relevance": "Developing effective monitoring and troubleshooting strategies is essential for successful microservices-based systems.",
-      "sources": [
-        {
-          "title": "Service Meshes",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Logs and Monitoring Tools",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Security",
-      "findings": "Security considerations are essential for designing and deploying microservices-based systems.",
-      "relevance": "Understand security best practices to protect your applications and ensure compliance with regulatory requirements.",
-      "sources": [
-        {
-          "title": "Authentication and Authorization",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Data Encryption",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Testing and Quality Assurance",
-      "findings": "Writing effective tests for microservices is crucial for ensuring reliability, maintainability, and scalability.",
-      "relevance": "Design robust testing strategies to ensure your applications meet high-quality standards.",
-      "sources": [
-        {
-          "title": "Dynamic Programming Tests",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Async Tests",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Evolution and Maturity",
-      "findings": "As microservices continue to gain adoption, understanding their evolution is essential for success.",
-      "relevance": "Continuously monitor and improve your microservices architecture to ensure maturity and scalability.",
-      "sources": [
-        {
-          "title": "Service Catalogs",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Service Orchestration Models",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Scalability and Performance",
-      "findings": "Optimizing microservices for scalability and performance is critical for achieving high availability.",
-      "relevance": "Understand the challenges of scaling your applications and design strategies to ensure optimal performance.",
-      "sources": [
-        {
-          "title": "Load Balancing",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Caching Strategies",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Service Meshes and Microservices",
-      "findings": "Service meshes and microservices are complementary architecture patterns that enhance security, visibility, and performance.",
-      "relevance": "Explore the benefits of using service meshes to deliver better-designed microservices-based systems.",
-      "sources": [
-        {
-          "title": "Service Meshes for Microservices",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Microservice Meshes for Large-Scale Systems",
-          "url": "",
-          "additionalProperties": ""
+          "name": "{}",
+          "title": "{}",
+          "type": "null"
         }
       ]
     }
   ],
-  "summary": "The evolution of microservices design is driven by advances in technology, changing business needs, and the need for greater scalability, reliability, and maintainability."
+  "summary": "Microservices are increasing in popularity as they offer better scalability, faster deployment, and increased flexibility."
 }

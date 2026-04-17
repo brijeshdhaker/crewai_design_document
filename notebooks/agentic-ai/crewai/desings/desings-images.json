@@ -1,158 +1,35 @@
 {
   "research_images": [
     {
-      "topic": "Components of a Microservice",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/components-of-a-microservice?view=azure-ecosystem-standard-reference",
-      "relevance": "Understanding the components of a microservice is crucial for designing and deploying effective microservices-based systems.",
+      "topic": "Microservice Design",
+      "findings": "\"# Scalability\n https://docs.microsoft.com/en-us/azure/kusto/query/Multitenant-support-in- Azure-Kusto-Server\" # Fault Tolerance\n https://docs.microsoft.com/en-us/azure/service-stacks/scalable-systems-with-microservices-on-a-database-platform?\n",
+      "relevance": "\"The use of microservices provides increased scalability and fault tolerance since individual service failures do not affect the entire system.\"\n https://blog.percolate.io/microservices-can-help-easily-deploy-to-production/",
       "sources": [
         {
-          "title": "Service Discovery",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "API Design",
-          "url": "",
-          "additionalProperties": ""
+          "additionalProperties": "{}",
+          "type": "null",
+          "properties": "{",
+          "name": "search_query",
+          "required": "{",
+          "title": "Search Query"
         }
       ]
     },
     {
-      "topic": "Microservice Composition",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/components-of-a-microservice#micro-composition-considerations?view=azure-ecosystem-standard-reference",
-      "relevance": "As microservices become more widespread in modern software development, understanding composition is essential for design and deployment decisions.",
+      "topic": "Design of microservices",
+      "findings": "\"# Modular Design\n https://docs.microsoft.com/en-us/azure/kusto/query/Multitenant-support-in- Azure-Kusto-Server\" \"# Scalability\n https://docs.microsoft.com/en-us/azure/service-stacks/scalable-systems-with-microservices-on-a-database-platform?\n",
+      "relevance": "\"Modular design helps ensure that changes can be made to individual services without affecting the rest of the system.\"\n https://blog.percolate.io/microservices-can-help-easily-deploy-to-production/",
       "sources": [
         {
-          "title": "Service Interoperability",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Caching and Load Balancing",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Deployment",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/deployment-strategies?view=azure-ecosystem-standard-reference#delivery-methodology-and-deployment-models",
-      "relevance": "Choose the right deployment strategy for your microservices architecture to achieve desired outcomes.",
-      "sources": [
-        {
-          "title": "Containerization and Orchestration",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Cloud-Native Computing",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Monitoring and Troubleshooting",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/contributing-data-to-the-azure-log-database-overview?view=azure-ecosystem-standard-reference&tabs=query-by-product-name",
-      "relevance": "Developing effective monitoring and troubleshooting strategies is essential for successful microservices-based systems.",
-      "sources": [
-        {
-          "title": "Service Meshes",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Logs and Monitoring Tools",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Security",
-      "findings": "https://docs.microsoft.com/en-us/azure architecture/microservices-security?view=azure-ecosystem-standard-reference#security-best-practices-and-tools-for-microservices-based-systems",
-      "relevance": "Understand security best practices to protect your applications and ensure compliance with regulatory requirements.",
-      "sources": [
-        {
-          "title": "Authentication and Authorization",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Data Encryption",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Testing and Quality Assurance",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/test-delivery-and-operations?view=azure-ecosystem-standard-reference#testing-in-microservices-based-systems",
-      "relevance": "Design robust testing strategies to ensure your applications meet high-quality standards.",
-      "sources": [
-        {
-          "title": "Dynamic Programming Tests",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Async Tests",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Evolution and Maturity",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/evolution-and-maturity?view=azure-ecosystem-standard-reference#evolution-of-microservices",
-      "relevance": "Continuously monitor and improve your microservices architecture to ensure maturity and scalability.",
-      "sources": [
-        {
-          "title": "Service Catalogs",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Service Orchestration Models",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Scalability and Performance",
-      "findings": "https://docs.microsoft.com/en-us/azure/architecture/microservicesarchitecture/contributing-performance-and-scalability-part-1?view=azure-ecosystem-standard-reference&tabs=query-by-product-name",
-      "relevance": "Optimizing microservices for scalability and performance is critical for achieving high availability.",
-      "sources": [
-        {
-          "title": "Load Balancing",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Caching Strategies",
-          "url": "",
-          "additionalProperties": ""
-        }
-      ]
-    },
-    {
-      "topic": "Service Meshes and Microservices",
-      "findings": "https://docs.microsoft.com/en-us/azure/microservices-service-architecturegetServiceMesh-and-Microservices?view=azure-ecosystem-standard-variant-1#service-meshes-and-microservices",
-      "relevance": "Explore the benefits of using service meshes to deliver better-designed microservices-based systems.",
-      "sources": [
-        {
-          "title": "Service Meshes for Microservices",
-          "url": "",
-          "additionalProperties": ""
-        },
-        {
-          "title": "Microservice Meshes for Large-Scale Systems",
-          "url": "",
-          "additionalProperties": ""
+          "additionalProperties": "{}",
+          "type": "null",
+          "properties": "{",
+          "name": "search_query",
+          "required": "{",
+          "title": "Search Query"
         }
       ]
     }
   ],
-  "summary": "The future of microservices design is driven by advances in technology and changing business needs, with a focus on scaling, reliability, and maintainability. This report highlights key findings and trends in microservices design, including components, composition, deployment, monitoring, security, testing, and evolution."
+  "summary": "Designing microservices can be done modular which improves scalability and flexibility.\n The main advantage of the modular model is that it allows for easier deployment to production. "
 }
