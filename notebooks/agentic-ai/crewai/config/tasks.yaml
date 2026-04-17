@@ -12,11 +12,7 @@ find_images_task:
     Review the context you got and expands each topic into full section for a report about {topic}
     Make sure you find top 10 interesting and relevant design url about {topic} and return list of url.
   expected_output: >
-    A list top 10 images of the most relevant urls about {topic} that should include
-    - url
-    - link
-    - href
-    - title
+    A list top 10 images of the most relevant urls about {topic}
   agent: image_researcher
   context: [research_task]
   output_file: agentic-ai/crewai/desings/desings-images.json
