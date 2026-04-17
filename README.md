@@ -5,7 +5,7 @@
 ![](./docs/images/design_flow.png)
 
 #
-#
+# Gmail Server MCP Server
 #
 send an email notification with folloing details: 
 --recipient 'brijeshdhaker@gmail.com'
