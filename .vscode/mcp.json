@@ -25,11 +25,11 @@
 			"type": "stdio",
             "command": "python",
             "args": [
-                "/home/brijeshdhaker/IdeaProjects/bd-notebooks-module/src/main/py/com/example/agentic/mcp/mysqlserver.py"
+                "/home/brijeshdhaker/IdeaProjects/crewai_design_document/src/main/py/com/example/agentic/mcp/mysqlserver.py"
             ],
 			"env": {
-				"WORK_DIR":"/home/brijeshdhaker/IdeaProjects/bd-notebooks-module",
-				"PYTHONPATH":"/home/brijeshdhaker/IdeaProjects/bd-notebooks-module/src/main/py"
+				"WORK_DIR":"/home/brijeshdhaker/IdeaProjects/crewai_design_document",
+				"PYTHONPATH":"/home/brijeshdhaker/IdeaProjects/crewai_design_document/src/main/py"
             },
 			"version": "0.0.1-snapshot"
 		}

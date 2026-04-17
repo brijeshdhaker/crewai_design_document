@@ -51,3 +51,4 @@ ddgs
 embedchain
 openai-agents
 docx2txt
+tavily-python
