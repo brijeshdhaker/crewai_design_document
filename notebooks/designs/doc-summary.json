@@ -1,0 +1,16 @@
+{
+  "topic": "Agility",
+  "summary": "Microservices foster an organization of small, independent teams that take ownership of their services.",
+  "benefits": [
+    {
+      "topic": "Experimentation",
+      "summary": "Easy Deployment enables faster experimentation on new microservice ideas through continuous integration and delivery."
+    }
+  ],
+  "references": [
+    "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/compute/approved/images/838cb416a0511f55db3e2ddb9899fbd6.841515f74c442f9ef1fbc753648c80075b598442.png",
+    "https://microservices.io/i/posts/teams-own-subdomains.png",
+    "https://microservices.io/i/posts/assemblage-overview/Defining_Microservice_Architecture_V2.png",
+    "https://microservices.io/i/posts/microservices-teams-subdomains.png"
+  ]
+}
