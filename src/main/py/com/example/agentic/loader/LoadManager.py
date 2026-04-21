@@ -6,6 +6,7 @@ from langchain_community.document_loaders import Docx2txtLoader
 from langchain_community.document_loaders.excel import UnstructuredExcelLoader
 from langchain_community.document_loaders import JSONLoader
 from langchain_community.document_loaders import WebBaseLoader
+from langchain_community.document_loaders import UnstructuredURLLoader
 
 #
 class LoadManager:
@@ -195,6 +196,24 @@ class LoadManager:
             print(f"[DEBUG] Loading pages from : {web_path}")
             try:
                 loader = WebBaseLoader(web_paths=[web_path])
+                loaded = loader.load()
+                print(f"[DEBUG] Loaded {len(loaded)} Web documents from {web_path}")
+                _documents.extend(loaded)
+            except Exception as e:
+                print(f"[ERROR] Failed to load Web documents from {web_path}: {e}")
+
+        return _documents
+    
+
+    @classmethod
+    def from_url(cls, web_paths: List[str]):
+        _documents = []
+        # Web urls
+        print(f"[DEBUG] Found {len(web_paths)} page : {[str(f) for f in web_paths]}")
+        for web_path in web_paths:
+            print(f"[DEBUG] Loading pages from : {web_path}")
+            try:
+                loader = UnstructuredURLLoader(urls=web_paths)
                 loaded = loader.load()
                 print(f"[DEBUG] Loaded {len(loaded)} Web documents from {web_path}")
                 _documents.extend(loaded)

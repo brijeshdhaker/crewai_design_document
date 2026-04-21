@@ -25,14 +25,7 @@ class ChromaVectorStore(VectorStore):
                  chunk_overlap: int = 200):
         
         super().__init__(persist_dir,embedding_model,chunk_size,chunk_overlap) 
-        # self.persist_directory = Path(f"vactor_store/{persist_dir}").resolve()
-        # self.metadata = []
-        # self.embedding_model = embedding_model
         self.collection_name = collection_name
-        # self.model = SentenceTransformer(embedding_model)
-        # self.chunk_size = chunk_size
-        # self.chunk_overlap = chunk_overlap
-        # self.embeddingManager = EmbeddingManager(model_name=self.embedding_model, chunk_size=self.chunk_size, chunk_overlap=self.chunk_overlap)
         self._initialize_store()
 
     #
@@ -44,8 +37,8 @@ class ChromaVectorStore(VectorStore):
             # chroma run --path vactor_store/chroma
             #Chroma.from_documents(persist_directory=self.persist_directory)
             #self.client = chromadb.PersistentClient(path=self.persist_directory)
-            #OllamaEmbeddings(model="",)
-            #db = Chroma(persist_directory="./chroma_db", embedding_function=OpenAIEmbeddings());
+            #OllamaEmbeddings(model="nomic-embed-text", url="http://localhost:11434/api/embed")
+            #db = Chroma(persist_directory=self.persist_directory, embedding_function=OpenAIEmbeddings());
             self.client = chromadb.PersistentClient(path=self.persist_directory)
             #self.client = chromadb.HttpClient(host="localhost", port=8000, ssl=False)
 

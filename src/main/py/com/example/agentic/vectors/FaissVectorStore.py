@@ -12,7 +12,7 @@ import uuid
 
 class FaissVectorStore(VectorStore):
     """
-    FaissVectorStore
+    FaissVectorStore : Facebook AI Similarity Search
     """
     def __init__(self, 
                  persist_dir: str = "faiss", 
@@ -24,13 +24,6 @@ class FaissVectorStore(VectorStore):
         #
         self.index = None
         self.metadata = []
-        #self.persist_dir = Path(f"vactor_store/{persist_dir}").resolve()
-        #os.makedirs(self.persist_dir, exist_ok=True)
-        #self.embedding_model = embedding_model
-        #self.model = SentenceTransformer(embedding_model)
-        #self.chunk_size = chunk_size
-        #self.chunk_overlap = chunk_overlap
-        #self.embeddingManager = EmbeddingManager(model_name=self.embedding_model, chunk_size=self.chunk_size, chunk_overlap=self.chunk_overlap)
         
     #
     def build_from_documents(self, documents: List[Any]):

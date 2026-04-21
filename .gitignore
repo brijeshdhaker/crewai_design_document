@@ -35,3 +35,4 @@ target
 credentials.json
 token.json
 vactor_store
+rag_store

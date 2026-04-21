@@ -3,7 +3,6 @@ from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 import chromadb
 from chromadb.config import Settings
-from com.example.agentic.embedding.EmbeddingManager import EmbeddingManager
 from com.example.agentic.vectors.ChromaVectorStore import ChromaVectorStore
 
 class DesignInput(BaseModel):

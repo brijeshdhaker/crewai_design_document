@@ -1,0 +1,11 @@
+{
+".read_a_files_content": {
+"file_path": "/home/brijeshdhaker/IdeaProjects/crewai_design_document/docs/text/Brijesh_Resume.txt",
+"}
+
+
+{
+
+".read_a_files_content": {
+"file_path": "/home/brijeshdhaker/IdeaProjects/crewai_design_document/docs/text/ExampleFile.txt",
+"}

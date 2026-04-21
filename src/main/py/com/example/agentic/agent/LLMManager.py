@@ -63,7 +63,7 @@ class LLMManager:
 
         # Groq llm client
         if type == 'groq' :
-            return LLM(model="groq/openai/gpt-oss-20b")
+            return LLM(model="groq/openai/gpt-oss-20b", base_url="https://api.groq.com/openai/v1")
         
         # OpenAI llm client
         if type == 'openai' :
