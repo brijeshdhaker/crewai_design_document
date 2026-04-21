@@ -1,31 +1,41 @@
-# research_task:
-#   description: >
-#     Conduct a thorough research about {topic}
-#     Make sure you find  relevant and interesting information about {topic}.
-#   expected_output: >
-#     A json containing the extracted content about research on {topic}. json should include following attributes
-#     - topic
-#     - findings
-#     - relevance
-#     - sources
-#   agent: researcher
-#   output_file: designs/designs-research.json
-
-find_images_task:
+research_task:
   description: >
-    Review the context you got and expands each research_points into full section 
-    make sure you scarp each url from research_points's sources and return json list of relavent images.
+    Conduct a thorough research about {topic}
+    Make sure you find minimume 10 relevant and accurate content on solution design for {topic}.
   expected_output: >
-    a json containing list of images on {topic} with folloing attributes
+    A json containing the extracted content about research on {topic}. json should include following attributes
     - topic
-    - source
-    - image_url
+    - findings
+    - relevance
+    - sources
+  agent: content_researcher
+  output_file: outputs/L005/research_task_{run_id}.json
 
-    make sure image_url end with jpg or jpeg or png extensions.
+collect_urls_task:
+  description: >
+    make sure you find all web page urls from provided context.
+  expected_output: >
+    A json containing list of webpage url with following attributes
+    - name
+    - url
+  agent: website_collector
+  output_file: outputs/L005/collect_urls_task_{run_id}.json
 
-  agent: image_extractor
-  #context: [research_task]
-  output_file: designs/designs-images.json
+# find_images_task:
+#   description: >
+#     Review the context you got and expands each research_points into full section 
+#     make sure you scarp each url from research_points's sources and return json list of relavent images.
+#   expected_output: >
+#     a json containing list of images on {topic} with folloing attributes
+#     - topic
+#     - source
+#     - image_url
+
+#     make sure image_url end with jpg or jpeg or png extensions.
+
+#   agent: image_extractor
+#   #context: [research_task]
+#   output_file: designs/designs-images.json
 
 # reporting_task:
 #   description: >
