@@ -1,394 +1,88 @@
 {
-  "research_points": [
+  "design_reference_images": [
     {
-      "topic": "Microservice Design",
-      "findings": "Microservices are modular and scalable architectural design patterns that use multiple microservices to build an application.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Microservices Handbook",
-          "url": "https://www.amazon.com/Microservices-Handbook-Micromasters-Focused-Series/dp/1484250178"
-        },
-        {
-          "title": "Cloud native programming for modern IT - Cloud Native Computing Foundation",
-          "url": "https://computationalthoughtfoundation.org/cncf/"
-        }
-      ]
+      "title": "The Microservices Handbook",
+      "url": "https://microservices.io/i/posts/microservices-teams-subdomains.png"
     },
     {
-      "topic": "Benefits of Microservice Design",
-      "findings": "Microservices enable independent development and deployment, improved scalability, and increased flexibility.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "Why We Need Cloud Native Architecture",
-          "url": "https://www.cio.com/article/1704441 Why-we-need-cloud-native-architecture"
-        }
-      ]
+      "title": "Cloud native programming for modern IT - Cloud Native Computing Foundation",
+      "url": "https://microservices.io/i/posts/assemblage-overview/Defining_Microservice_Architecture_V2.png"
     },
     {
-      "topic": "Examples of Microservice Design Use Cases",
-      "findings": "Microservices are suitable for complex and distributed applications, such as financial systems or e-commerce platforms.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "Microservices in Finance",
-          "url": "https://www.infosys.com/us/en/cloud-insights/microservices-in-finance.html"
-        }
-      ]
+      "title": "Cloud Native Microservices Architecture",
+      "url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/compute/approved/images/838cb416a0511f55db3e2ddb9899fbd6.841515f74c442f9ef1fbc753648c80075b598442.png"
+    },{
+      "title": "Microservices in Finance",
+      "url": "https://microservices.io/i/posts/teams-own-subdomains.png"
+    },{
+      "title": "Microservices in Finance",
+      "url": "https://miro.medium.com/v2/1*JIDAhbsGGTztmcJ6OxNkrg.png"
+    },{
+      "title": "Microservices in Finance",
+      "url": "https://cdn.processon.io/admin/knowledge/article_content_img/67b6a344bcb4581cedd12229.png"
+    },{
+      "title": "Microservices in Accounts",
+      "url": "https://media.geeksforgeeks.org/wp-content/uploads/20260119121511671663/account_service.webp"
+    },{
+      "title": "Microservices in Finance",
+      "url": "https://miro.medium.com/v2/1*gu-EDwPMod6oHtGMmC_JeQ.png"
+    },{
+      "title": "Microservices on Azure",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/images/microservices-patterns.png"
+    },{
+      "title": "Microservices on AWS",
+      "url": "https://i.sstatic.net/saIZ3.jpg"
+    },{
+      "title": "Microservices in Netflix",
+      "url": "https://cdn.prod.website-files.com/6544bdfdf184393c08205ae6/67aefe9276b181bd21ee547e_Netflix%2001.png"
+    },{
+      "title": "Microservices usage in Netflix",
+      "url": "https://miro.medium.com/v2/resize:fit:1400/1*oT-ssryndQnVmbwBhjXNzw.gif"
+    },{
+      "title": "bigdata design on Netflix",
+      "url": "https://cdnl.tblsft.com/sites/default/files/blog/netflix_data_architecture_tableau_aws.png"
     },
     {
-      "topic": "Design Considerations for Microservice Design",
-      "findings": "When designing microservices, consider the use of service discovery, API gateways, and message queues to enable communication between services.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "Designing Multi-Stage Scalable Microservices",
-          "url": "https://www.tutorialspoint.com/microservices/designing_multi_stage_scalable_microservices.htm"
-        }
-      ]
+      "title": "Bigdata Design on Netflix",
+      "url": "https://miro.medium.com/v2/resize:fit:1200/1*Nz8bc62eRDxegVkzJr_HrQ.png"
     },
     {
-      "topic": "History of Microservice Design",
-      "findings": "The concept of microservices has been around for several decades, with early examples in software development and database management.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "A Brief History of Microservices",
-          "url": "https://www.huffpost.com/national-news/a-brief-history-of-microservices_n_16921611.html"
-        }
-      ]
+      "title": "Cloud Data Platform",
+      "url": "https://practicalanalytics.wordpress.com/wp-content/uploads/2015/06/netflix.png"
     },
     {
-      "topic": "Key Concepts in Microservice Design",
-      "findings": "Microservices involve the use of containerization, microkernel architecture, and request-response architecture.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "Understanding Microservices Architecture",
-          "url": "https://www.dzone.com/articles/understanding-microservices-architecture"
-        }
-      ]
-    },
-    {
-      "topic": "Best Practices for Implementing Microservice Design",
-      "findings": "Implement microservices using a service-discovery approach and enable communication between services through APIs or message queues.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "Service Discovery in Cloud-Native Architecture",
-          "url": "https://www.infobright.io/service-discovery"
-        }
-      ]
-    },
-    {
-      "topic": "Challenges in Microservice Design",
-      "findings": "Microservices can lead to increased complexity, but also enable easier scalability and flexibility.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "Challenges of Microservices",
-          "url": "https://www.huffpost.com/national-news/challenges-of-microservices_N_16921532.html"
-        }
-      ]
-    },
-    {
-      "topic": "Design Patterns for Microservice Design",
-      "findings": "Popular design patterns include service-to-service communication, APIGateway pattern, and event-driven architecture.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "Service-to-Service Communication using TCP/IP",
-          "url": "https://www.tutorialspoint.com tcpip/tcp_ip_communication.htm"
-        }
-      ]
-    },
-    {
-      "topic": "Industry Adoption of Microservice Design",
-      "findings": "Microservices design is widely adopted in industry, particularly in the software development and financial sectors.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Rise of Microservices Architecture",
-          "url": "https://www.infocentre.com.au/the-rise-of-microservices-architecture"
-        }
-      ]
-    },
-    {
-      "topic": "Security Concerns in Microservice Design",
-      "findings": "Microservices design exposes many security concerns, including information exposure through API gates and service discovery.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "Security Risks of Microservices",
-          "url": "https://www.huffpost.com/national-news/security-risks-of-microservices_n_16921549.html"
-        }
-      ]
-    },
-    {
-      "topic": "Artificial Intelligence in Microservice Design",
-      "findings": "AI can be used to enhance microservice design, such as automation of tasks and decision-making using machine learning.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How Machine Learning is Changing Microservices Development",
-          "url": "https://www.huffpost.com/national-news/how-machine-learnng-changes-microservices-development_N_16921563.html"
-        }
-      ]
-    },
-    {
-      "topic": "Cloud Native Computing in Microservice Design",
-      "findings": "Cloud-native computing platforms, such as Kubernetes and Kubernetes EKS, enables microservices to be deployed on cloud infrastructure.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Future of Cloud-Native Architecture",
-          "url": "https://www.infobright.io/the-future-of-cloud-native-architecture"
-        }
-      ]
-    },
-    {
-      "topic": "Service Catalogue in Microservice Design",
-      "findings": "A service catalogue is essential for microservices design, as it allows developers to access services and configuration centrally.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "The Need for Service Catalogues",
-          "url": "https://www.huffpost.com/national-news/the-need-for-service-catalogues_N_16921561.html"
-        }
-      ]
-    },
-    {
-      "topic": "Automation of Microservice Deployment in Microservice Design",
-      "findings": "Automating microservice deployment involves using CI/CD tools and automation scripts to streamline the process.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Automate Microservices Deployment",
-          "url": "https://www.huffpost.com/national-news/how-to-automate-microservices-deployment_N_16921563.html"
-        }
-      ]
-    },
-    {
-      "topic": "Monitoring and Logging in Microservice Design",
-      "findings": "Monitoring and logging enable application monitoring, performance analysis, and issue discovery.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Monitor and Log Applications",
-          "url": "https://www.huffpost.com/national-news/how-to-monitor-and-log-applications_N_16921565.html"
-        }
-      ]
-    },
-    {
-      "topic": "Microservices in Blockchain",
-      "findings": "Blockchain technology enables microservices design with a focus on immutability and decentralization.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Benefits of Using Blockchain for Microservices",
-          "url": "https://www.infocentre.com.au/The-benefits-of-using-blockchain-for-microservices.html"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Architechure in IoT Systems",
-      "findings": "Microservice architecture is critical for IoT systems that require real-time data processing and communication.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Benefits of Microservices Architecture in IoT",
-          "url": "https://www.huffpost.com/national-news/the-benefits-of-microservices-architecture-in-iot-N_16921567.html"
-        }
-      ]
-    },
-    {
-      "topic": "Cloud-native Development for Microservice Design",
-      "findings": "Cloud-native development enables microservices design using cloud infrastructure and tools like Kubernetes.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Importance of Cloud-Native Architecture",
-          "url": "https://www.infobright.io/the-importance-of-cloud-native-architecture"
-        }
-      ]
-    },
-    {
-      "topic": "Security Features in Microservice Design",
-      "findings": "Various security features are required for microservices design, including encryption, authentication and authorization.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "The Importance of Security in Microservices",
-          "url": "https://www.huffpost.com/national-news/the-importance-of-security-in-microservices_N_16921569.html"
-        }
-      ]
-    },
-    {
-      "topic": "Scalability and Performance Analysis for Microservice Design",
-      "findings": "Scalability analysis and performance testing are essential for microservices design to ensure high availability.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Analyze Scalability and Performance",
-          "url": "https://www.huffpost.com/national-news/how-to-analyze-scalability-and-performance_N_16921571.html"
-        }
-      ]
-    },
-    {
-      "topic": "Microservices Development Best Practices",
-      "findings": "Best practices, such as service discovery and API gateways, can simplify the development process for microservice design.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Develop Microservices",
-          "url": "https://www.huffpost.com/national-news/how-to-develop-microservices_N_16921573.html"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Composition",
-      "findings": "The composition of microservices can be optimized using techniques such as service chaining and mediation.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Compose Microservices",
-          "url": "https://www.huffpost.com/national-news/how-to-compose-microservices_N_16921575.html"
-        }
-      ]
-    },
-    {
-      "topic": "Microservice Testing",
-      "findings": "Functional testing and integration testing are key to validating the microservices.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Test Microservices",
-          "url": "https://www.huffpost.com/national-news/how-to-test-microservices_N_16921577.html"
-        }
-      ]
-    },
-    {
-      "topic": "Cloud-Native Testing",
-      "findings": "Cloud-native testing involves using cloud-specific tools like Kubernetes and Appium.",
-      "relevance": "High",
-      "sources": [
-        {
-          "title": "The Importance of Cloud-Native Testing",
-          "url": "https://www.infocentre.com.au/TheImportanceOfCloudNativeTesting.html"
-        }
-      ]
-    },
-    {
-      "topic": "Domain Modeling",
-      "findings": "Domain modeling helps in understanding the business domain to design microservices that align with it.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Model Domain",
-          "url": "https://www.huffpost.com/national-news/how-to-model-domain_N_16921579.html"
-        }
-      ]
-    },
-    {
-      "topic": "API Design",
-      "findings": "API design involves creating RESTful APIs that cater microservices.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "APIDesignPatterns",
-          "url": "https://www.huffpost.com/national-news/apidesign-patterns_N_16921581.html"
-        }
-      ]
-    },
-    {
-      "topic": "API Security",
-      "findings": "API security measures are necessary to protect against threats in microservice design.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Secure APIs",
-          "url": "https://www.huffpost.com/national-news/how-to-secure-apis_N_16921583.html"
-        }
-      ]
-    },
-    {
-      "topic": "API Gateway",
-      "findings": "An API gateway can help in monitoring and managing traffic, as well as enforcing security policies.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Use API Gateways",
-          "url": "https://www.huffpost.com/national-news/how-to-use-API-Gateways_N_16921585.html"
-        }
-      ]
-    },
-    {
-      "topic": "Logging and Monitoring",
-      "findings": "Log files are essential for monitoring and analyzing the performance of microservices.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "How to Monitor Log Files",
-          "url": "https://www.huffpost.com/national-news/how-to-monitor-log-files_N_16921587.html"
-        }
-      ]
-    },
-    {
-      "topic": "DevOps Practices",
-      "findings": "The use of containerization and automation can improve the overall development speed.",
-      "relevance": "Low",
-      "sources": [
-        {
-          "title": "Devops best practices",
-          "url": "https://www.huffpost.com/national-news/devops-best-practices_N_16921589.html"
-        }
-      ]
-    },
-    {
-      "topic": "Automation of Microservices Deployment",
-      "findings": "Automating deployment involves using CI/CD tools to simplify the process.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Automate Microservices Deployment",
-          "url": "https://www.huffpost.com/national-news/how-to-automate-microservices-deployment_N_16921591.html"
-        }
-      ]
-    },
-    {
-      "topic": "Service Discovery",
-      "findings": "A service discovery mechanism is required to enable communication between services.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Use Service Discovery",
-          "url": "https://www.huffpost.com/national-news/how-to-use-service-discovery_N_16921593.html"
-        }
-      ]
-    },
-    {
-      "topic": "Monitoring and Error Handling",
-      "findings": "Monitoring tools are necessary to track the performance of microservices, while error handling mechanisms can prevent errors.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Monitor Microservices",
-          "url": "https://www.huffpost.com/national-news/how-to-monitor-microservices_N_16921595.html"
-        }
-      ]
-    },
-    {
-      "topic": "Event-Driven Architecture",
-      "findings": "An event-driven architecture can use publish-subscribe patterns to handle microservice events.",
-      "relevance": "Medium",
-      "sources": [
-        {
-          "title": "How to Use Event-Driven Architecture",
-          "url": "https://www.huffpost.com/national-news/how-to-use-event-driven-architecture-N_16921598.html"
-        }
-      ]
-    }
-  ],
+      "title": "Netflix Data Platform",
+      "url": "https://miro.medium.com/v2/1*iUnFujzVqMBpK41z32-Ctw.png"
+    },{
+      "title": "Data Engineering Stack",
+      "url": "https://substackcdn.com/image/fetch/$s_!Ciw-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4e55870d-819b-4917-a50c-f6946ceb6909_2000x1429.png"
+    },{
+      "title": "Cloudera Data Platform",
+      "url": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/6082840760001/0de4dfe3-14e8-4aaf-8586-caf7a8c3f869/e0028ac9-cc78-4108-92f8-f8f9f6373d83/1280x720/match/image.jpg"
+    },{
+      "title": "Cloudera Data Platform",
+      "url": "https://www.cloudera.com/content/dam/www/marketing/blog/b03/2021/august/b03-dataflow-for-the-public-cloud-2.png"
+    },{
+      "title": "Cloudera Data Platform",
+      "url": "https://datahubanalytics.com/wp-content/uploads/2024/02/e64ae6dd-bfe2-4aa0-94b1-96741552e08b-1170x570@2x.png"
+    },{
+      "title": "Cloudera Data Platform",
+      "url": "https://docs.cloudera.com/runtime/7.3.1/cdp-security-overview/images/cdp-ra-security-2.png"
+    },{
+      "title": "Cloudera Data Platform on AWS",
+      "url": "https://d2908q01vomqb2.cloudfront.net/77de68daecd823babbb58edb1c8e14d7106e83bb/2020/08/11/Cloudera-Amazon-EKS-16.jpg"
+    },{
+      "title": "Cloudera Data Platformon Azure",
+      "url": "https://www.datavirtualizationblog.com/wp-content/uploads/2020/09/blog-mitesh-1024x583.png"
+    },{
+    "title": "Data Platform on Databricks",
+    "url": "https://www.databricks.com/sites/default/files/2025-06/intelligent_data_warehousing_on_databricks.jpg?v=1749056687"
+  },{
+    "title": "Kafka Data Platform",
+    "url": "https://www.kai-waehner.de/wp-content/uploads/2024/12/Screenshot-2024-12-01-at-07.38.17.png"
+  },{
+    "title": "Kafka in AWS",
+    "url": "https://miro.medium.com/v2/resize:fit:1400/0*xzTFG_PCk6Gk2O7Q.jpg"
+  }],
   "summary": "This research outlines the key findings, challenges, and best practices for designing microservices. It also highlights various solutions to improve scalability and performance."
 }

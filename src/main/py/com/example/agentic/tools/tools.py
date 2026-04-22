@@ -136,3 +136,14 @@ def codedoc_search_tool(_query: str):
     return _search_tool.run(_query)
 
 #codedoc_search_tool(_query="Java")
+
+from crewai_tools import ScrapeElementFromWebsiteTool
+# Initialize tool with CSS selector for images
+image_tool = ScrapeElementFromWebsiteTool(
+    website_url="https://example.com",
+    css_element="img"
+)
+
+from crewai_tools import ScrapflyScrapeWebsiteTool
+# Initialize the tool
+scrape_tool = ScrapflyScrapeWebsiteTool(api_key="your_scrapfly_api_key")
