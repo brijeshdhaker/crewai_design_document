@@ -35,6 +35,7 @@ target
 credentials.json
 token.json
 vectorstore
+storage
 knowledge
 memory
 */outputs

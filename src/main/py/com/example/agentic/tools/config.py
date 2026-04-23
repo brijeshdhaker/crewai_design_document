@@ -16,7 +16,7 @@ _tool_config = dict(
         config=dict(model_name="nomic-embed-text", task_type="RETRIEVAL_DOCUMENT")
     ),
     embedding_model= dict(
-        provider="openai",
+        provider="ollama",
         config=dict(model= "nomic-embed-text", api_key="", platform_url="http://localhost:11434/v1")
     ),
     vectordb=dict(
@@ -59,16 +59,17 @@ from crewai.rag.embeddings.providers.openai.types import OpenAIProviderSpec
 from crewai.rag.embeddings.providers.ollama.types import OllamaProviderSpec
 from crewai.rag.embeddings.providers.huggingface.types import HuggingFaceProviderSpec
 
+
 _embedding_model_openai: OpenAIProviderSpec = {
     "provider": "openai",
     "config": {
-        #"api_key": "ollama",
+        "api_key": "ollama",
         "model_name": "nomic-embed-text",
-        "dimensions": 4096,
-        #"organization_id": "your-org-id",
+        "dimensions": 768,
+        "organization_id": "sandbox",
         "api_base": "http://localhost:11434/v1/",
-        #"api_version": "v1",
-        #"default_headers": {"X-Custom-Header": "xxxxx"}
+        "api_version": "v1",
+        "default_headers": {"X-Custom-Header": "ollama"}
     }
 }
 
@@ -83,7 +84,7 @@ _embedding_model_ollama: OllamaProviderSpec = {
 _embedding_model_hf: HuggingFaceProviderSpec = {
     "provider": "huggingface",
     "config": {
-        "url": "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
+        "model": "sentence-transformers/all-MiniLM-L6-v2"
     }
 }
 
