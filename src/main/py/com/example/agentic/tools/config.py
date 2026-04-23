@@ -13,40 +13,57 @@ _tool_config = dict(
     ),
     embedder=dict(
         provider="ollama", # or openai, ollama, ...
-        config=dict(model_name="nomic-embed-text", task_type="RETRIEVAL_DOCUMENT")
+        config=dict(model_name="nomic-embed-text:latest", task_type="RETRIEVAL_DOCUMENT")
     ),
     embedding_model= dict(
         provider="ollama",
-        config=dict(model= "nomic-embed-text", api_key="", platform_url="http://localhost:11434/v1")
+        config=dict(model= "nomic-embed-text:latest", api_key="", platform_url="http://localhost:11434/v1")
     ),
     vectordb=dict(
         provider="chromadb",
-        config={"persist_directory":"agentic-ai/chromadb", "allow_reset": "true", "is_persistent": "true"}
+        config={
+            #"collection_name": "rag_documents",
+            #"persist_directory":"/home/brijeshdhaker/IdeaProjects/crewai_design_document/vectorstore/chroma", 
+            #"allow_reset": "true", 
+            #"is_persistent": "true"
+        }
     )
 )
 
 #
 _rag_tool_config = dict(
     llm=dict(
-        provider="ollama", # or google, openai, anthropic, llama2, ...
+        provider="openai",
         config=dict(
             model="llama3.2:1b-instruct-q8_0",
-            # temperature=0.5,
+            # temperature=0.7,
             # top_p=1,
             # stream=true,
         ),
     ),
     embedder=dict(
-        provider="ollama", # or openai, ollama, ...
-        config=dict(model_name="nomic-embed-text", task_type="RETRIEVAL_DOCUMENT")
+        provider="openai", # or openai, ollama, ...
+        config=dict(model_name="nomic-embed-text:latest", task_type="RETRIEVAL_DOCUMENT")
     ),
     embedding_model= dict(
         provider="openai",
-        config=dict(model= "nomic-embed-text", api_key="", platform_url="http://localhost:11434/v1")
+        config=dict(
+            model_name= "nomic-embed-text:latest", 
+            api_key="ollama",
+            organization_id="sandbox",
+            api_base="http://localhost:11434/v1",
+            api_version="v1",
+            default_headers={"X-Custom-Header": "ollama"}
+        )
     ),
     vectordb=dict(
         provider="chromadb",
-        config={"persist_directory":"agentic-ai/chromadb", "allow_reset": "true", "is_persistent": "true"}
+        config={
+            #"collection_name": "sandbox_documents",
+            #"persist_directory":"/home/brijeshdhaker/IdeaProjects/crewai_design_document/vectorstore/chroma", 
+            #"allow_reset": "true", 
+            #"is_persistent": "true"
+        }
     )
 )
 
@@ -103,6 +120,7 @@ memory_openai = Memory(embedder={
     "provider": "openai",
     "config": {
         "model_name": "nomic-embed-text",
+        "dimensions": 768,
         # "api_key": "sk-...",  # or set OPENAI_API_KEY env var
     },
 })
