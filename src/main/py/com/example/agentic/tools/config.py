@@ -42,7 +42,7 @@ _rag_tool_config = dict(
     ),
     embedding_model= dict(
         provider="openai",
-        config=dict(model= "nomic-embed-text", dimensions=768, api_key="", platform_url="http://localhost:11434/v1")
+        config=dict(model= "nomic-embed-text", api_key="", platform_url="http://localhost:11434/v1")
     ),
     vectordb=dict(
         provider="chromadb",
@@ -52,7 +52,7 @@ _rag_tool_config = dict(
 
 # Embedders
 _embedder_config_ollama={"provider": "ollama", "config": {"model_name": "nomic-embed-text", "url":"http://localhost:11434/api/embeddings"}}
-_embedder_config_openai={"provider": "openai", "config": {"model_name": "nomic-embed-text", "api_key":"", "api_base":"http://localhost:11434/v1", "dimensions":768, "api_version":"v1"}}
+_embedder_config_openai={"provider": "openai", "config": {"model_name": "nomic-embed-text", "api_key":"", "api_base":"http://localhost:11434/v1", "api_version":"v1"}}
 _embedder_config_hf={"provider": "huggingface", "config": {"model_name": "sentence-transformers/all-MiniLM-L6-v2"}}
 
 from crewai.rag.embeddings.providers.openai.types import OpenAIProviderSpec
@@ -86,3 +86,29 @@ _embedding_model_hf: HuggingFaceProviderSpec = {
         "url": "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
     }
 }
+
+## Memory
+from crewai import Memory
+
+memory_ollama = Memory(embedder={
+    "provider": "ollama",
+    "config": {
+        "model_name": "nomic-embed-text",
+        "url": "http://localhost:11434/api/embeddings",
+    },
+})
+
+memory_openai = Memory(embedder={
+    "provider": "openai",
+    "config": {
+        "model_name": "nomic-embed-text",
+        # "api_key": "sk-...",  # or set OPENAI_API_KEY env var
+    },
+})
+
+memory_hf = Memory(embedder={
+    "provider": "huggingface",
+    "config": {
+        "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    },
+})

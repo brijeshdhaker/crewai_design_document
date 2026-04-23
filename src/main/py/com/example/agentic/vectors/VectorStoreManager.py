@@ -24,9 +24,9 @@ class VectorStoreManager:
         """
         ## Create a simple txt file
         work_dir = os.getenv("WORK_DIR")
-        os.makedirs(f"{work_dir}/vactor_store/chroma",exist_ok=True)
+        os.makedirs(f"{work_dir}/vectorstore/chroma",exist_ok=True)
         self.collection_name = collection_name
-        self.persist_directory = f"{work_dir}/vactor_store/{persist_directory}"
+        self.persist_directory = f"{work_dir}/vectorstore/{persist_directory}"
         self.client = None
         self.collection = None
         self._initialize_store()
@@ -37,7 +37,7 @@ class VectorStoreManager:
         try:
             # Create persistent ChromaDB client
             os.makedirs(self.persist_directory, exist_ok=True)
-            # chroma run --path vactor_store/chroma
+            # chroma run --path vectorstore/chroma
             #Chroma.from_documents(persist_directory=self.persist_directory)
             #self.client = chromadb.PersistentClient(path=self.persist_directory)
             #db = Chroma(persist_directory="./chroma_db", embedding_function=OpenAIEmbeddings());

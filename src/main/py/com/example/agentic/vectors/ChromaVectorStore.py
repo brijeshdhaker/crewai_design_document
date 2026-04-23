@@ -34,7 +34,7 @@ class ChromaVectorStore(VectorStore):
         try:
             # Create persistent ChromaDB client
             os.makedirs(self.persist_directory, exist_ok=True)
-            # chroma run --path vactor_store/chroma
+            # chroma run --path vectorstore/chroma
             #Chroma.from_documents(persist_directory=self.persist_directory)
             #self.client = chromadb.PersistentClient(path=self.persist_directory)
             #OllamaEmbeddings(model="nomic-embed-text", url="http://localhost:11434/api/embed")
@@ -177,7 +177,7 @@ if __name__ == "__main__":
     # douments = LoadManager.from_directory(document_dir)
     # print(f"[*INFO] Total loaded documents: {len(douments)}")
     
-    # Connect to knowledge store vactordb.
+    # Connect to knowledge store vectorstore.
     store = ChromaVectorStore()
     #store.build_from_documents(douments)
     print(store.query("What are benefits of microservices ?", top_k=10))

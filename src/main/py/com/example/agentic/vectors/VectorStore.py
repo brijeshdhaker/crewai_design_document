@@ -12,7 +12,7 @@ class VectorStore(ABC):
                  chunk_size: int = 1000, 
                  chunk_overlap: int = 200):
         
-        self.persist_directory = Path(f"vactor_store/{persist_dir}").resolve()
+        self.persist_directory = Path(f"vectorstore/{persist_dir}").resolve()
         self.metadata = []
         self.embedding_model = embedding_model
         self.model = SentenceTransformer(embedding_model)
