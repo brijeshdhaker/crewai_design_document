@@ -36,6 +36,7 @@ _rag_tool_config = dict(
         provider="openai",
         config=dict(
             model="llama3.2:1b-instruct-q8_0",
+            max_tokens=4096
             # temperature=0.7,
             # top_p=1,
             # stream=true,
@@ -81,11 +82,12 @@ _embedding_model_openai: OpenAIProviderSpec = {
     "provider": "openai",
     "config": {
         "api_key": "ollama",
-        "model_name": "nomic-embed-text",
+        "model_name": "nomic-embed-text:latest",
         "dimensions": 768,
         "organization_id": "sandbox",
         "api_base": "http://localhost:11434/v1/",
         "api_version": "v1",
+        "api_type": "ollama",
         "default_headers": {"X-Custom-Header": "ollama"}
     }
 }
@@ -93,7 +95,7 @@ _embedding_model_openai: OpenAIProviderSpec = {
 _embedding_model_ollama: OllamaProviderSpec = {
     "provider": "ollama",
     "config": {
-        "model_name": "nomic-embed-text",
+        "model_name": "nomic-embed-text:latest",
         "url": "http://localhost:11434/api/embeddings"
     }
 }

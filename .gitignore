@@ -38,4 +38,5 @@ vectorstore
 storage
 knowledge
 memory
+*/logs/*
 */outputs/*

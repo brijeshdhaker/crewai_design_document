@@ -91,14 +91,14 @@ class LoadManager:
         # docx urls
         print(f"[DEBUG] Found {len(pdf_paths)} page : {[str(f) for f in pdf_paths]}")
         for _path in pdf_paths:
-            print(f"[DEBUG] Loading json from : {_path}")
+            print(f"[DEBUG] Loading MS Word document from : {_path}")
             try:
                 loader = Docx2txtLoader(str(_path))
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} Word documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} MS Word document from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load {_path}: {e}")
+                print(f"[ERROR] Failed to load MS Word document {_path}: {e}")
 
         return _documents
     
@@ -108,14 +108,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(pdf_paths)} page : {[str(f) for f in pdf_paths]}")
         for _path in pdf_paths:
-            print(f"[DEBUG] Loading json from : {_path}")
+            print(f"[DEBUG] Loading MS Excel document from : {_path}")
             try:
                 loader = UnstructuredExcelLoader(str(_path))
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} Excel documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} MS Excel document from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load Excel documents {_path}: {e}")
+                print(f"[ERROR] Failed to load MS Excel document {_path}: {e}")
 
         return _documents
     
@@ -125,14 +125,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(pdf_paths)} page : {[str(f) for f in pdf_paths]}")
         for _path in pdf_paths:
-            print(f"[DEBUG] Loading json from : {_path}")
+            print(f"[DEBUG] Loading csv document from : {_path}")
             try:
                 loader = CSVLoader(str(_path))
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} CSV documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} csv document from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load CSV documents {_path}: {e}")
+                print(f"[ERROR] Failed to load csv document {_path}: {e}")
 
         return _documents
     
@@ -142,14 +142,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(pdf_paths)} page : {[str(f) for f in pdf_paths]}")
         for _path in pdf_paths:
-            print(f"[DEBUG] Loading json from : {_path}")
+            print(f"[DEBUG] Loading text document from : {_path}")
             try:
                 loader = TextLoader(str(_path))
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} TXT documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} text documents from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load TXT documents {_path}: {e}")
+                print(f"[ERROR] Failed to load text documents {_path}: {e}")
 
         return _documents
     
@@ -159,14 +159,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(pdf_paths)} page : {[str(f) for f in pdf_paths]}")
         for _path in pdf_paths:
-            print(f"[DEBUG] Loading json from : {_path}")
+            print(f"[DEBUG] Loading pdf document from : {_path}")
             try:
                 loader = PyPDFLoader(str(_path))
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} PDF documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} PDF document from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load PDF documents {_path}: {e}")
+                print(f"[ERROR] Failed to load PDF document {_path}: {e}")
 
         return _documents
     
@@ -180,10 +180,10 @@ class LoadManager:
             try:
                 loader = JSONLoader(str(_path), jq_schema=".results[].summary")
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} JSON documents from {_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} JSON document from {_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load JSON documents {_path}: {e}")
+                print(f"[ERROR] Failed to load JSON document {_path}: {e}")
 
         return _documents
     
@@ -193,14 +193,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(web_paths)} page : {[str(f) for f in web_paths]}")
         for web_path in web_paths:
-            print(f"[DEBUG] Loading pages from : {web_path}")
+            print(f"[DEBUG] Loading pages from web : {web_path}")
             try:
                 loader = WebBaseLoader(web_paths=[web_path])
                 loaded = loader.load()
-                print(f"[DEBUG] Loaded {len(loaded)} Web documents from {web_path}")
+                print(f"[DEBUG] Loaded {len(loaded)} Web document from {web_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load Web documents from {web_path}: {e}")
+                print(f"[ERROR] Failed to load Web document from {web_path}: {e}")
 
         return _documents
     
@@ -211,14 +211,14 @@ class LoadManager:
         # Web urls
         print(f"[DEBUG] Found {len(web_paths)} page : {[str(f) for f in web_paths]}")
         for web_path in web_paths:
-            print(f"[DEBUG] Loading pages from : {web_path}")
+            print(f"[DEBUG] Loading pages from url: {web_path}")
             try:
                 loader = UnstructuredURLLoader(urls=web_paths)
                 loaded = loader.load()
                 print(f"[DEBUG] Loaded {len(loaded)} Web documents from {web_path}")
                 _documents.extend(loaded)
             except Exception as e:
-                print(f"[ERROR] Failed to load Web documents from {web_path}: {e}")
+                print(f"[ERROR] Failed to load Web document from {web_path}: {e}")
 
         return _documents
     
