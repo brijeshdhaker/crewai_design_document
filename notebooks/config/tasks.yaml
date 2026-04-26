@@ -15,9 +15,9 @@ research_task:
 
 extract_images_task:
   description: >
-    Find all image urls for provided topic {topic} from context.
+    Find all image urls from file `docs/json/designs-research.json` using image_fetch_tool.
   expected_output: >
-    A valid json document containing list of image url with following attributes
+    A valid json document containing list of following attributes
     - title
     - url
   agent: images_extractor

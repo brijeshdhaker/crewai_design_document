@@ -2,6 +2,7 @@
 import os
 import getpass
 from dotenv import load_dotenv
+from emoji import config
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
@@ -54,14 +55,31 @@ class LLMManager:
         load_dotenv()
         # Ollama llm client
         if type == 'ollama' :
-            # LLM setup using litellm
-            return LLM(model="ollama/llama3.2:1b-instruct-q8_0", base_url="http://localhost:11434")
+            # LLM setup using litellm additional_params={"num_ctx":16384},
+            return LLM(
+                model="ollama/llama3.2:latest", 
+                base_url="http://localhost:11434", 
+                temperature=0.4,     # Controls randomness
+                #seed=21,             # Ensures consistent outputs
+                #max_tokens=4096,     # Limits response length
+                #top_p=0.9            # Controls the diversity of the response
+            )
         # Groq llm client
         if type == 'groq' :
-            return LLM(model="groq/openai/gpt-oss-20b", base_url="https://api.groq.com/openai/v1")
+            return LLM(
+                model="groq/openai/gpt-oss-20b", 
+                base_url="https://api.groq.com/openai/v1"
+            )
         # OpenAI llm client
         if type == 'openai' or type == 'hf':
             #
             if not os.environ.get("OPENAI_API_KEY"):
                 os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key: ")
-            return LLM(model="openai/llama3.2:1b-instruct-q8_0", base_url="http://localhost:11434/v1")
+            return LLM(
+                model="openai/llama3.2:latest", 
+                base_url="http://localhost:11434/v1",
+                temperature=0.2,     # Controls randomness
+                seed=42,             # Ensures consistent outputs
+                max_tokens=4096,     # Limits response length
+                top_p=0.9            # Controls the diversity of the response
+            )
