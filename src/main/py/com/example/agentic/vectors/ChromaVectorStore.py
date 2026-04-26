@@ -1,6 +1,7 @@
 import os
 import faiss
 from pathlib import Path
+from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 import numpy as np
 import pickle
@@ -36,10 +37,10 @@ class ChromaVectorStore(VectorStore):
             os.makedirs(self.persist_directory, exist_ok=True)
             # chroma run --path vectorstore/chroma
             #Chroma.from_documents(persist_directory=self.persist_directory)
-            #self.client = chromadb.PersistentClient(path=self.persist_directory)
             #OllamaEmbeddings(model="nomic-embed-text", url="http://localhost:11434/api/embed")
             #db = Chroma(persist_directory=self.persist_directory, embedding_function=OpenAIEmbeddings());
-            self.client = chromadb.PersistentClient(path=self.persist_directory)
+            _settings = Settings(allow_reset=False, is_persistent=True, anonymized_telemetry=False, persist_directory=self.persist_directory)
+            self.client = chromadb.PersistentClient(path=self.persist_directory, settings=_settings)
             #self.client = chromadb.HttpClient(host="localhost", port=8000, ssl=False)
 
             # Get or create collection

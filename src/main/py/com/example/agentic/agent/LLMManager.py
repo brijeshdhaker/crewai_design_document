@@ -13,17 +13,15 @@ from crewai import LLM
 # "groq:openai/gpt-oss-20b"
 # "groq:llama-3.1-70b-versatile"
 
-load_dotenv()
-
 class LLMManager:
     """
     """
     __agent = None
     __model = None
 
-
     @classmethod
     def get_agent(cls):
+        load_dotenv()
         #
         if not os.environ.get("OPENAI_API_KEY"):
             os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key : ")
@@ -52,21 +50,17 @@ class LLMManager:
     
     #
     @classmethod
-    def create_llm(cls, type: str) -> LLM :
-    
+    def create_llm(cls, type: str = 'openai') -> LLM :
         load_dotenv()
-        
-        # Groq llm client
+        # Ollama llm client
         if type == 'ollama' :
             # LLM setup using litellm
             return LLM(model="ollama/llama3.2:1b-instruct-q8_0", base_url="http://localhost:11434")
-
         # Groq llm client
         if type == 'groq' :
             return LLM(model="groq/openai/gpt-oss-20b", base_url="https://api.groq.com/openai/v1")
-        
         # OpenAI llm client
-        if type == 'openai' :
+        if type == 'openai' or type == 'hf':
             #
             if not os.environ.get("OPENAI_API_KEY"):
                 os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key: ")
