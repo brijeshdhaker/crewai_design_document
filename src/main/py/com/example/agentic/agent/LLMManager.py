@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from crewai import LLM
 
 #
-# llama3.2:3b-instruct-q8_0
+# gemma4:latest
 # nomic-embed-text:latest
 #
 class LLMManager:
@@ -38,10 +38,11 @@ class LLMManager:
             return LLM(
                 model=f"ollama/{os.environ["OLLAMA_MODEL"]}", 
                 base_url="http://localhost:11434", 
-                temperature=0.3,     # Controls randomness os.environ["OLLAMA_MODEL"]
-                #seed=21,             # Ensures consistent outputs
-                #max_tokens=4096,     # Limits response length
-                #top_p=0.9            # Controls the diversity of the response
+                temperature=0.3,     # Controls randomness in output (0.0 to 1.0)
+                max_tokens=4096,     # Maximum number of tokens to generate
+                timeout=300,         # timeout for llm
+                #seed=21,            # Ensures consistent outputs
+                #top_p=0.9           # Controls diversity of output (0.0 to 1.0)
             )
         # Groq llm client
         if type == 'groq' :
@@ -54,8 +55,9 @@ class LLMManager:
             return LLM(
                 model=f"openai/{os.environ["OPENAI_MODEL_NAME"]}", 
                 base_url="http://localhost:11434/v1",
-                temperature=0.3,     # Controls randomness
-                #seed=42,             # Ensures consistent outputs
-                #max_tokens=4096,     # Limits response length
-                #top_p=0.9            # Controls the diversity of the response
+                temperature=0.3,     # Controls randomness in output (0.0 to 1.0)
+                max_tokens=4096,     # Maximum number of tokens to generate
+                timeout=300,         # timeout for llm
+                #seed=21,            # Ensures consistent outputs
+                #top_p=0.9           # Controls diversity of output (0.0 to 1.0)
             )

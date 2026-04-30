@@ -1,7 +1,7 @@
 research_task:
   description: >
     Conduct a thorough research about {topic}
-    Make sure you find minimume 10 relevant and accurate content on solution design for {topic}.
+    Make sure you find minimume 10 relevant and accurate content on {topic}.
   expected_output: >
     A json containing the extracted content about research on {topic}. json should include following attributes
     - topic

@@ -1,5 +1,10 @@
+import os
+from dotenv import load_dotenv
+
 """
 """
+load_dotenv()
+
 _tool_config = dict(
     chunk_size=1000, 
     chunk_overlap=200,
@@ -7,9 +12,9 @@ _tool_config = dict(
     llm=dict(
         provider="ollama",
         config=dict(
-            model="llama3.2:3b-instruct-q8_0",
+            model=os.environ["OPENAI_MODEL_NAME"],
             base_url="http://localhost:11434",
-            temperature=0.7,
+            temperature=0.3,
             max_tokens=4096,
             timeout=300,
             # num_predict=256,
@@ -20,14 +25,14 @@ _tool_config = dict(
     embedder=dict(
         provider="ollama",
         config=dict(
-            model_name="nomic-embed-text:latest", 
+            model_name=os.environ["OPENAI_EMBEDDING_MODEL_ID"], 
             url="http://localhost:11434/api/embeddings"
         )
     ),
     embedding_model= dict(
         provider="ollama",
         config=dict(
-            model= "nomic-embed-text:latest", 
+            model= os.environ["OPENAI_EMBEDDING_MODEL_ID"], 
             api_key="", 
             platform_url="http://localhost:11434/api/embeddings"
         )
@@ -51,10 +56,10 @@ _rag_tool_config = dict(
     llm=dict(
         provider="openai",
         config=dict(
-            model="llama3.2:3b-instruct-q8_0",
+            model=os.environ["OPENAI_MODEL_NAME"],
             base_url="http://localhost:11434/v1",
             max_tokens=4096,
-            temperature=0.7,
+            temperature=0.3,
             timeout=300,
             # top_p=1,
             # stream=true,
@@ -63,7 +68,7 @@ _rag_tool_config = dict(
     embedder=dict(
         provider="openai",
         config=dict(
-            model_name="nomic-embed-text:latest",
+            model_name=os.environ["OPENAI_EMBEDDING_MODEL_ID"],
             api_base="http://localhost:11434/v1",
             api_version="v1",
             api_key="ollama",
@@ -75,7 +80,7 @@ _rag_tool_config = dict(
     embedding_model= dict(
         provider="openai",
         config=dict(
-            model_name= "nomic-embed-text:latest", 
+            model_name= os.environ["OPENAI_EMBEDDING_MODEL_ID"], 
             organization_id="sandbox",
             api_base="http://localhost:11434/v1",
             api_version="v1",
